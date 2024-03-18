@@ -1,0 +1,33 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "back web",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emybr/.com.git"
+  },
+  "keywords": [
+    "Belen92713"
+  ],
+  "author": "Emiliano Brizuela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emybr/.com/issues"
+  },
+  "homepage": "https://github.com/emybr/.com#readme",
+  "dependencies": {
+    "@xenova/transformers": "2.8.0",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^8.0.0",
+    "wavefile": "11.0.0"
+  }
+}
