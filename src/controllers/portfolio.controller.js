@@ -19,8 +19,10 @@ async function postPortfolioController(req, res){
 }
 
 async function getPortfolio(req, res){
-res.header("Access-Control-Allow-Origin", "*");
-const { location } = req.query;
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    const { location } = req.query;
 try {
 	let filter = {};
     const Portfolio = await portfolioManager.getAllPorfolio(filter);
