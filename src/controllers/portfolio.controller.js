@@ -19,6 +19,7 @@ async function postPortfolioController(req, res){
 }
 
 async function getPortfolio(req, res){
+res.header("Access-Control-Allow-Origin", "*");
 const { location } = req.query;
 try {
 	let filter = {};
